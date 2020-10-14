@@ -10,15 +10,13 @@ body{color:#fff;background-color:#000;}
 /* Insert a psudo element of text "Freshest" into nav for design purposes*/
 /* Avoid redundant text for screen readers sake*/
 /* Navigation is the last div in the html document, good semantic flow*/
-#navigation p::before{content:"Freshest";}
+#navigation p::before{content:"Freshest";padding-left:40px}
 
 #navigation {
     width:100%;
     position:absolute;
     top:0;
-    padding: 10px;
-    margin: 20px;
-
+	padding: 10px 0;
     display:flex;
     justify-content: space-between;
     background-color:rgba(0, 0, 0, .5);
@@ -30,12 +28,12 @@ body{color:#fff;background-color:#000;}
 #navigation a{
     color:#fff;
     text-decoration: none;
-    margin-right:20px;
+    padding-right:40px;
 }
 
 #logo-container {
     width:100%;
-    height:400px;
+    height:600px;
     background-image: url(images/vegetables.jpg);
     background-size:cover;
 
@@ -71,20 +69,28 @@ body{color:#fff;background-color:#000;}
 */
 .content-row {
     width:100%;
-    height:300px;
+    height:400px;
     display:flex;
+}
+#tallrow{
+	height:500px;
 }
 .content-image{
     width:40%;
 }
 .content-text{
     width:60%;
+	display:flex;
+	align-items: center;
+	justify-content:center;
+	padding:60px;
 }
 .content-text h2{
     font-size: 1.5em;
     font-weight:400;
 }
 .content-text p{
+	padding-top: 20px;
     font-size: 1em;
     font-weight:100;
 }
@@ -100,4 +106,12 @@ body{color:#fff;background-color:#000;}
     background-image: url(images/pasta.jpg);
     background-size:cover;
 }
-
+#txt1{
+	background-color:#010101;
+}
+#txt2{
+	background-color:#121212;
+}
+#txt3{
+	background-color:#212121;
+}
